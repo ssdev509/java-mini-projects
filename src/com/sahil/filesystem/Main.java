@@ -1,4 +1,4 @@
-import com.sahil.Directory;
+import com.sahil.filesystem.Directory;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -13,5 +13,10 @@ public class Main {
         }else {
             System.out.print(path);
         }
+        System.out.print(validateAlphaNumeric("s"));
+    }
+
+    public static Boolean validateAlphaNumeric(String value) {
+        return value.matches("[a-zA-Z0-9]");
     }
 }
