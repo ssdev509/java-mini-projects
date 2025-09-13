@@ -1,5 +1,7 @@
 package com.sahil.multithreading;
 
+import java.util.concurrent.locks.LockSupport;
+
 public class UnderstandingThreadLifecycle extends Thread{
     @Override
     public void run() {
@@ -23,4 +25,13 @@ public class UnderstandingThreadLifecycle extends Thread{
 
 
     }
+    /*
+    public enum State {
+        RUNNABLE,
+        BLOCKED,
+        WAITING,
+        TIMED_WAITING,
+        TERMINATED;
+    }
+    */
 }
