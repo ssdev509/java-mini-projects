@@ -36,5 +36,28 @@ public class UnderstandingSynchronization {
 //        Thread-1 - 256 after
 //        Thread-0 - 512 after
 //        512
+
+// after using synchronized
+ /*Thread-1 - 1
+    Thread-0 - 1
+    Thread-1 - 2 after
+    Thread-1 - 4
+    Thread-0 - 4 after
+    Thread-1 - 8 after
+    Thread-0 - 8
+    Thread-0 - 16 after
+    Thread-1 - 8
+    Thread-0 - 16
+    Thread-1 - 32 after
+    Thread-0 - 64 after
+    Thread-1 - 64
+    Thread-0 - 64
+    Thread-1 - 128 after
+    Thread-0 - 256 after
+    Thread-1 - 256
+    Thread-0 - 256
+    Thread-1 - 512 after
+    Thread-0 - 1024 after
+    1024*/
     }
 }

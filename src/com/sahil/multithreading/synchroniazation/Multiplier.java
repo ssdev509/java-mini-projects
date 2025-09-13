@@ -4,8 +4,16 @@ import java.math.BigInteger;
 public class Multiplier {
     private BigInteger i = new BigInteger("1");
 
-    public void multiply(BigInteger multiplicand){
-        i = i.multiply(multiplicand);
+//    public synchronized void multiply(BigInteger multiplicand){
+//        i = i.multiply(multiplicand);
+//    }
+
+//    OR
+
+    public  void multiply(BigInteger multiplicand){
+        synchronized (this) {
+            i = i.multiply(multiplicand);
+        }
     }
 
     public BigInteger getI() {
